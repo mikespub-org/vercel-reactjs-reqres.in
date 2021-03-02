@@ -21,7 +21,7 @@ const rootSaga = function*() {
   ]);
 };
 const sagaMiddleware = createSagaMiddleware();
-const logger = createLogger();
+//const logger = createLogger();
 const rootReducer = (state, action) => {
   if (action.type === "USER_LOGOUT") {
     state = undefined;
